@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style rel="stylesheet" href="style.css"></style>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </main>
+    <div class="status"></div>
+    <button id="restart">restart</button>
+
+    <dialog id="playerModal">
+        <form method="dialog" id="playerForm">
+            <h2>Inserisci i nomi dei giocatori</h2>
+
+            <label for="nameX">Giocatore X:</label>
+            <input type="text" id="nameX" name="nameX" required>
+
+            <label for="nameO">Giocatore O:</label>
+            <input type="text" id="nameO" name="nameO" required>
+            <menu>
+                <button id="cancelBtn" value="cancel">Annulla</button>
+                <button id="startBtn" value="default">Start</button>
+            </menu>
+        </form>
+    </dialog>
 
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
