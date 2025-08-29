@@ -14,6 +14,7 @@ function render(){
     cells.forEach(function (cell){
         const index = cell.dataset.index;
         cell.textContent = state.board[index];
+        
         cell.disabled = state.board[index] !=='' || state.isOver
         })
         

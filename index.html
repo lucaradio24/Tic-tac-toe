@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="wrapper">
+        <h1 style="text-align: center;">Tic-tac-toe</h1>
     <main id="board">
       <button class="cell" data-index="0"></button>
       <button class="cell" data-index="1"></button>
@@ -18,8 +20,9 @@
       <button class="cell" data-index="7"></button>
       <button class="cell" data-index="8"></button>
     </main>
+
     <div class="status"></div>
-    <button id="restart">restart</button>
+    <button id="restart">Play again?</button>
 
     <dialog id="playerModal">
         <form method="dialog" id="playerForm">
@@ -37,7 +40,7 @@
         </form>
     </dialog>
 
-
+</div>
     <script src="script.js"></script>
   </body>
 </html>
